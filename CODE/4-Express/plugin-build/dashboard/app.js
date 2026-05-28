@@ -558,11 +558,21 @@
             </section>
 
             <!-- Professional State-Level Governance Footer -->
-            <footer class="max-w-5xl mx-auto px-4 pb-12 text-center space-y-2">
-                <p class="text-xs text-slate-500 font-sans tracking-wide">
-                    Powered by <span class="font-outfit font-semibold text-slate-400">Studio PxG, LLC</span> &middot; Made with Aloha for the Hawaii Department of Health
+            <footer class="max-w-5xl mx-auto px-4 pb-12 text-center space-y-2.5">
+                <p class="text-xs text-slate-400 font-sans tracking-wide leading-relaxed">
+                    <span class="font-outfit font-bold text-slate-200">Presented by: Joanne Jeremie</span> &middot; Master Educator &amp; Technical Writer
+                    <br />
+                    <span class="text-slate-500 font-mono">Email: joannejeremie1@gmail.com | Phone: (808) 321-5801</span>
                 </p>
-                <p class="text-[10px] text-slate-600 font-mono">
+                <p class="text-xs text-slate-500 font-sans tracking-wide">
+                    In Collaboration &amp; Powered by <span class="font-outfit font-semibold text-slate-400">Studio PxG, LLC</span> &middot; Veteran-Owned
+                    <br />
+                    <span class="text-[11px] font-semibold text-indigo-400 uppercase tracking-wider font-outfit">SDVOSB Certified in the State of Hawaii (2026)</span>
+                </p>
+                <p class="text-[11px] text-slate-500 font-sans italic">
+                    Made with Aloha 🍍
+                </p>
+                <p class="text-[9px] text-slate-600 font-mono">
                     NIST SP 800-53 rev5 Audit Logged &middot; System Security Level: Moderate (FIPS-199)
                 </p>
             </footer>
