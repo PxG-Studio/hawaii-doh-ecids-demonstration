@@ -1,0 +1,23 @@
+# Media and audio recordings
+*.m4a
+*.mp3
+*.wav
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Workspace / IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Large or temporary directories
+.playwright-mcp/
+.sisyphus/
+node_modules/
+.gemini/

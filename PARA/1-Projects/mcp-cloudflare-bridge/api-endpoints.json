@@ -1,0 +1,204 @@
+{
+  "api_version": "1.0",
+  "service": "local_onsitemonitoring",
+  "compliance": {
+    "framework": "FERPA 34 CFR Part 99",
+    "nist_controls": ["AC-2", "AC-3", "AU-2", "SC-8", "SC-13", "MP-6"],
+    "anonymization": "k-anonymity (k>=5) + field suppression + noise injection"
+  },
+  "endpoints": [
+    {
+      "name": "ingest_data",
+      "wsfunction": "local_onsitemonitoring_ingest_data",
+      "method": "POST",
+      "auth": "WSToken (service_account)",
+      "type": "write",
+      "capability": "local/onsitemonitoring:ingestdata",
+      "description": "Ingest simulated program, training, or consent data",
+      "parameters": {
+        "type": "object",
+        "required": ["tenant_id", "dataset", "records"],
+        "properties": {
+          "tenant_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "District tenant UUID"
+          },
+          "dataset": {
+            "type": "string",
+            "enum": ["programs", "training", "consent"],
+            "description": "Dataset type to ingest"
+          },
+          "records": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1000,
+            "items": {
+              "type": "object",
+              "properties": {
+                "region": { "type": "string", "maxLength": 100 },
+                "program_name": { "type": "string", "maxLength": 255 },
+                "student_count": { "type": "integer", "minimum": 0 },
+                "ei_coverage_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+                "eval_timeline_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+                "ifsp_timeline_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+                "consent_rate_pct": { "type": "number", "minimum": 0, "maximum": 100 }
+              }
+            }
+          }
+        }
+      },
+      "response": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "enum": ["success", "partial", "error"] },
+          "ingested": { "type": "integer" },
+          "rejected": { "type": "integer" },
+          "errors": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    {
+      "name": "get_compliance",
+      "wsfunction": "local_onsitemonitoring_get_compliance",
+      "method": "GET",
+      "auth": "WSToken (user_session)",
+      "type": "read",
+      "ajax": true,
+      "capability": "local/onsitemonitoring:viewanonymized",
+      "description": "Get compliance metrics (anonymized for public dashboard)",
+      "parameters": {
+        "type": "object",
+        "required": ["tenant_id"],
+        "properties": {
+          "tenant_id": { "type": "string", "format": "uuid" },
+          "region_filter": { "type": "string", "optional": true }
+        }
+      },
+      "response": {
+        "type": "object",
+        "properties": {
+          "overall_pct": { "type": "number" },
+          "by_region": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "region": { "type": "string" },
+                "eval_pct": { "type": "number" },
+                "ifsp_pct": { "type": "number" },
+                "status": { "type": "string", "enum": ["on_track", "at_risk", "critical"] }
+              }
+            }
+          },
+          "benchmark_eval": { "type": "number", "description": "100% target" },
+          "benchmark_ifsp": { "type": "number", "description": "100% target" },
+          "anonymized": { "type": "boolean" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    {
+      "name": "get_training_needs",
+      "wsfunction": "local_onsitemonitoring_get_training_needs",
+      "method": "GET",
+      "auth": "WSToken (user_session)",
+      "type": "read",
+      "ajax": true,
+      "capability": "local/onsitemonitoring:viewanonymized",
+      "description": "Predictive training needs by region",
+      "parameters": {
+        "type": "object",
+        "required": ["tenant_id"],
+        "properties": {
+          "tenant_id": { "type": "string", "format": "uuid" },
+          "risk_threshold_months": { "type": "integer", "default": 12, "optional": true }
+        }
+      },
+      "response": {
+        "type": "object",
+        "properties": {
+          "overall_completion_pct": { "type": "number" },
+          "regions_at_risk": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "region": { "type": "string" },
+                "completion_pct": { "type": "number" },
+                "personnel_count": { "type": "integer" },
+                "months_since_training": { "type": "integer" }
+              }
+            }
+          },
+          "state_avg_months_since_training": { "type": "number" }
+        }
+      }
+    },
+    {
+      "name": "get_consent_status",
+      "wsfunction": "local_onsitemonitoring_get_consent_status",
+      "method": "GET",
+      "auth": "WSToken (user_session)",
+      "type": "read",
+      "ajax": true,
+      "capability": "local/onsitemonitoring:viewanonymized",
+      "description": "Parental consent tracking by region",
+      "parameters": {
+        "type": "object",
+        "required": ["tenant_id"],
+        "properties": {
+          "tenant_id": { "type": "string", "format": "uuid" }
+        }
+      },
+      "response": {
+        "type": "object",
+        "properties": {
+          "overall_consent_rate_pct": { "type": "number" },
+          "total_families": { "type": "integer" },
+          "consent_granted": { "type": "integer" },
+          "consent_denied": { "type": "integer" },
+          "consent_pending": { "type": "integer" },
+          "by_region": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "region": { "type": "string" },
+                "consent_pct": { "type": "number" },
+                "pending": { "type": "integer" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "get_dashboard",
+      "wsfunction": "local_onsitemonitoring_get_dashboard",
+      "method": "GET",
+      "auth": "WSToken (user_session)",
+      "type": "read",
+      "ajax": true,
+      "capability": "local/onsitemonitoring:viewdashboard",
+      "description": "Aggregate dashboard data (all three widgets combined)",
+      "parameters": {
+        "type": "object",
+        "required": ["tenant_id"],
+        "properties": {
+          "tenant_id": { "type": "string", "format": "uuid" }
+        }
+      },
+      "response": {
+        "type": "object",
+        "properties": {
+          "compliance": { "$ref": "#/endpoints/1/response" },
+          "training_needs": { "$ref": "#/endpoints/2/response" },
+          "consent": { "$ref": "#/endpoints/3/response" },
+          "anonymized": { "type": "boolean" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  ]
+}

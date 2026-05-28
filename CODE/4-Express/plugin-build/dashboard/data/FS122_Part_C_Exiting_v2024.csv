@@ -1,0 +1,5 @@
+State,SchoolYear,ReportingDate,Region,ExitCount,AgeGroup,ExitReason,DataGroup
+HI,2024-2025,2024-11-01,Oahu (Honolulu),45,Toddlers (Age 2),Transitioned to Part B preschool,DG 623
+HI,2024-2025,2024-11-01,Maui (Kahului),12,Toddlers (Age 2),Exited with no referral,DG 623
+HI,2024-2025,2024-11-01,Hawaii (Hilo),15,Toddlers (Age 2),Transitioned to Part B preschool,DG 623
+HI,2024-2025,2024-11-01,Kauai (Lihue),6,Toddlers (Age 2),Exited without referral,DG 623

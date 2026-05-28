@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/onsitemonitoring/db" VERSION="20260528" COMMENT="State early intervention monitoring tables">
+
+  <TABLES>
+
+  <TABLE NAME="onsitemonitoring_programs" COMMENT="Program/district records">
+    <FIELDS>
+      <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+      <FIELD NAME="tenant_id" TYPE="char" LENGTH="36" NOTNULL="true" COMMENT="District UUID"/>
+      <FIELD NAME="program_name" TYPE="char" LENGTH="255" NOTNULL="true"/>
+      <FIELD NAME="region" TYPE="char" LENGTH="100" NOTNULL="true"/>
+      <FIELD NAME="student_count" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"/>
+      <FIELD NAME="eval_timeline_pct" TYPE="number" LENGTH="5" NOTNULL="true" DEFAULT="0" COMMENT="% evaluations completed within 45-day mandate"/>
+      <FIELD NAME="ifsp_timeline_pct" TYPE="number" LENGTH="5" NOTNULL="true" DEFAULT="0" COMMENT="% IFSPs completed within 30-day mandate"/>
+      <FIELD NAME="status" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="active"/>
+      <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"/>
+    </FIELDS>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+    <INDEXES>
+      <INDEX NAME="idx_tenant_region" UNIQUE="false" FIELDS="tenant_id, region"/>
+    </INDEXES>
+  </TABLE>
+
+  <TABLE NAME="onsitemonitoring_training" COMMENT="Personnel training records">
+    <FIELDS>
+      <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+      <FIELD NAME="tenant_id" TYPE="char" LENGTH="36" NOTNULL="true"/>
+      <FIELD NAME="region" TYPE="char" LENGTH="100" NOTNULL="true"/>
+      <FIELD NAME="personnel_count" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"/>
+      <FIELD NAME="training_complete_pct" TYPE="number" LENGTH="5" NOTNULL="true" DEFAULT="0"/>
+      <FIELD NAME="months_since_last_training" TYPE="number" LENGTH="5" NOTNULL="true" DEFAULT="0"/>
+      <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"/>
+    </FIELDS>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+  </TABLE>
+
+  <TABLE NAME="onsitemonitoring_consent" COMMENT="Parental consent tracking">
+    <FIELDS>
+      <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+      <FIELD NAME="tenant_id" TYPE="char" LENGTH="36" NOTNULL="true"/>
+      <FIELD NAME="region" TYPE="char" LENGTH="100" NOTNULL="true"/>
+      <FIELD NAME="family_id" TYPE="char" LENGTH="36" NOTNULL="true"/>
+      <FIELD NAME="consent_status" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="pending"/>
+      <FIELD NAME="consent_date" TYPE="int" LENGTH="10" NOTNULL="false"/>
+      <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"/>
+    </FIELDS>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+  </TABLE>
+
+  <TABLE NAME="onsitemonitoring_audit_log" COMMENT="Immutable audit trail (AU-2)">
+    <FIELDS>
+      <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+      <FIELD NAME="user_id" TYPE="int" LENGTH="10" NOTNULL="true"/>
+      <FIELD NAME="action" TYPE="char" LENGTH="100" NOTNULL="true"/>
+      <FIELD NAME="resource_type" TYPE="char" LENGTH="50" NOTNULL="true"/>
+      <FIELD NAME="resource_id" TYPE="int" LENGTH="10" NOTNULL="true"/>
+      <FIELD NAME="ip_address" TYPE="char" LENGTH="45" NOTNULL="true"/>
+      <FIELD NAME="details" TYPE="text" NOTNULL="false"/>
+      <FIELD NAME="timestamp" TYPE="int" LENGTH="10" NOTNULL="true"/>
+    </FIELDS>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+    <INDEXES>
+      <INDEX NAME="idx_audit_action_time" UNIQUE="false" FIELDS="action, timestamp"/>
+    </INDEXES>
+  </TABLE>
+  </TABLES>
+</XMLDB>
