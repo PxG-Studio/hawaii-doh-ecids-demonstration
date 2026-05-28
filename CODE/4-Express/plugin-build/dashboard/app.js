@@ -553,17 +553,17 @@
                         <div class="flex flex-wrap gap-2.5 w-full xl:w-auto font-outfit">
                             <a href="data/FS121_Part_C_Child_Count_v2024.csv" download="FS121_Part_C_Child_Count_v2024.csv" 
                                title="Download FS121 Child Count CSV. Citation: U.S. Department of Education, Office of Special Education Programs. (2024). EDFacts File Specification 121: Part C Child Count and Settings (v20.0). Washington, D.C.: Author." 
-                               class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                               class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 hover:border-indigo-400 hover:text-white shadow-sm shadow-indigo-500/10 transition-all duration-300">
                                 [CSV] Download FS121 (Child Count)
                             </a>
                             <a href="data/FS122_Part_C_Exiting_v2024.csv" download="FS122_Part_C_Exiting_v2024.csv" 
                                title="Download FS122 Exiting CSV. Citation: U.S. Department of Education, Office of Special Education Programs. (2024). EDFacts File Specification 122: Part C Exiting (v20.0). Washington, D.C.: Author." 
-                               class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                               class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 hover:border-indigo-400 hover:text-white shadow-sm shadow-indigo-500/10 transition-all duration-300">
                                 [CSV] Download FS122 (Exiting)
                             </a>
                             <a href="data/FS089_Early_Childhood_v2024.csv" download="FS089_Early_Childhood_v2024.csv" 
                                title="Download FS089 Early Childhood CSV. Citation: U.S. Department of Education, Office of Special Education Programs. (2024). EDFacts File Specification 089: Children with Disabilities (Early Childhood) (v20.1). Washington, D.C.: Author." 
-                               class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                               class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 hover:border-indigo-400 hover:text-white shadow-sm shadow-indigo-500/10 transition-all duration-300">
                                 [CSV] Download FS089 (Early Childhood)
                             </a>
                         </div>
@@ -573,40 +573,57 @@
 
             <!-- Professional State-Level Governance Footer -->
             <footer class="max-w-5xl mx-auto px-4 pb-12 mt-12 text-center space-y-6 border-t border-slate-800/40 pt-8">
-                <!-- Presenter Profile -->
-                <div class="space-y-1">
-                    <p class="text-xs text-slate-300 font-sans tracking-wide">
-                        <span class="font-outfit font-bold text-slate-100 text-sm">Presented by: Joanne Jeremie</span> &middot; Master Educator &amp; Technical Writer
-                    </p>
-                    <p class="text-[11px] text-slate-500 font-mono">
-                        Email: <a href="mailto:joannejeremie1@gmail.com" class="hover:underline text-indigo-400">joannejeremie1@gmail.com</a> | Phone: (808) 321-5801
-                    </p>
+                <!-- Presenter Profile & Info Bubbles -->
+                <div class="flex flex-wrap items-center justify-center gap-2 font-outfit">
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-slate-800/60 border border-slate-700/50 text-slate-200 shadow-sm" title="Master Educator and Technical Writer of the early intervention system">
+                        Presented by: Joanne Jeremie
+                    </span>
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-800/40 border border-slate-700/30 text-slate-300 shadow-sm" title="Role: Professional Master Educator & Technical Writer">
+                        Master Educator &amp; Technical Writer
+                    </span>
+                    <a href="mailto:joannejeremie1@gmail.com" class="px-3.5 py-1.5 rounded-full text-xs font-mono bg-indigo-500/5 border border-indigo-500/20 text-indigo-300 hover:bg-indigo-500/15 hover:border-indigo-400/50 transition-all duration-300 shadow-sm" title="Direct Email: joannejeremie1@gmail.com">
+                        joannejeremie1@gmail.com
+                    </a>
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-mono bg-slate-800/40 border border-slate-700/30 text-slate-300 shadow-sm" title="Direct Line: (808) 321-5801">
+                        (808) 321-5801
+                    </span>
                 </div>
 
-                <!-- Collaborative Governance & Certification -->
-                <div class="space-y-1">
-                    <p class="text-xs text-slate-400 font-sans tracking-wide">
-                        In Collaboration &amp; Powered by <a href="https://www.studiopxg.com" target="_blank" title="Visit Studio PxG, LLC" class="font-outfit font-semibold text-slate-300 hover:underline hover:text-slate-200">Studio PxG, LLC</a> &middot; Veteran-Owned
-                    </p>
-                    <p class="text-[10px] font-bold text-indigo-400/90 uppercase tracking-widest font-outfit">
-                        SDVOSB Certified in the State of Hawaii (2026)
-                    </p>
+                <!-- Collaborative Governance & Certification Bubbles -->
+                <div class="flex flex-wrap items-center justify-center gap-2 font-outfit">
+                    <a href="https://www.studiopxg.com" target="_blank" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 hover:border-indigo-400 hover:text-white transition-all duration-300 shadow-sm" title="Studio PxG, LLC - High-Fidelity Custom Engineering Solutions">
+                        In Collaboration &amp; Powered by Studio PxG, LLC
+                    </a>
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-sm" title="Service-Disabled Veteran-Owned Small Business (SDVOSB) Certified">
+                        Veteran-Owned
+                    </span>
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 tracking-wider uppercase shadow-sm" title="SDVOSB Certified in the State of Hawaii for 2026">
+                        SDVOSB Certified Hawaii (2026)
+                    </span>
                 </div>
 
-                <!-- Cultural Signature & Source Meta -->
-                <div class="space-y-1.5 pt-2">
-                    <p class="text-xs text-slate-400 font-sans italic flex items-center justify-center gap-1">
-                        Made with Aloha <span class="text-base not-italic" title="Aloha Pineapples">🍍</span>
-                    </p>
-                    <p class="text-[10px] text-slate-500 font-sans">
-                        Version 10.0.4 &middot; Source Code: <a href="https://github.com/PxG-Studio/hawaii-doh-ecids-demonstration" target="_blank" title="View official GitHub Source Repository" class="text-indigo-400/80 hover:underline">hawaii-doh-ecids-demonstration</a>
-                    </p>
+                <!-- Cultural Signature & Source Meta Bubbles -->
+                <div class="flex flex-wrap items-center justify-center gap-2 font-sans">
+                    <span class="px-3.5 py-1.5 rounded-full text-xs bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 flex items-center gap-1 shadow-sm" title="Made with genuine Aloha spirit in Hawaii">
+                        Made with Aloha <span class="text-sm not-italic" title="Aloha Pineapples">🍍</span>
+                    </span>
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-mono bg-slate-800/40 border border-slate-700/30 text-slate-400 shadow-sm" title="Current Deployment Version: 10.0.4">
+                        v10.0.4
+                    </span>
+                    <a href="https://github.com/PxG-Studio/hawaii-doh-ecids-demonstration" target="_blank" class="px-3.5 py-1.5 rounded-full text-xs font-mono bg-slate-800/60 border border-slate-700/50 text-indigo-400 hover:bg-indigo-500/10 hover:border-indigo-400 transition-all duration-300 shadow-sm" title="View the official GitHub Repository (hawaii-doh-ecids-demonstration)">
+                        GitHub Repo
+                    </a>
                 </div>
 
-                <!-- Compliance / Audit Trail -->
-                <p class="text-[9px] text-slate-600 font-mono pt-2">
-                    NIST SP 800-53 rev5 Audit Logged &middot; System Security Level: Moderate (FIPS-199)
-                </p>
+                <!-- Compliance / Audit Trail Bubbles -->
+                <div class="flex flex-wrap items-center justify-center gap-2 font-mono">
+                    <span class="px-3.5 py-1.5 rounded-full text-[10px] bg-red-500/10 border border-red-500/30 text-red-300 shadow-sm" title="System Security & Auditing: NIST SP 800-53 rev5 Audit Logged">
+                        NIST SP 800-53 rev5 Audit Logged
+                    </span>
+                    <span class="px-3.5 py-1.5 rounded-full text-[10px] bg-purple-500/10 border border-purple-500/30 text-purple-300 shadow-sm" title="FIPS 199 System Categorization: Moderate Impact System">
+                        Security Level: Moderate (FIPS-199)
+                    </span>
+                </div>
             </footer>
         `;
 
