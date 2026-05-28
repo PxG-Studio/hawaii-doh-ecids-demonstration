@@ -558,24 +558,39 @@
             </section>
 
             <!-- Professional State-Level Governance Footer -->
-            <footer class="max-w-5xl mx-auto px-4 pb-12 text-center space-y-2.5">
-                <p class="text-xs text-slate-400 font-sans tracking-wide leading-relaxed">
-                    <span class="font-outfit font-bold text-slate-200">Presented by: Joanne Jeremie</span> &middot; Master Educator &amp; Technical Writer
-                    <br />
-                    <span class="text-slate-500 font-mono">Email: joannejeremie1@gmail.com | Phone: (808) 321-5801</span>
-                </p>
-                <p class="text-xs text-slate-500 font-sans tracking-wide">
-                    In Collaboration &amp; Powered by <a href="https://www.studiopxg.com" target="_blank" title="Visit Studio PxG, LLC" class="font-outfit font-semibold text-slate-400 hover:underline hover:text-slate-300">Studio PxG, LLC</a> &middot; Veteran-Owned
-                    <br />
-                    <span class="text-[11px] font-semibold text-indigo-400 uppercase tracking-wider font-outfit">SDVOSB Certified in the State of Hawaii (2026)</span>
-                </p>
-                <p class="text-[10px] text-slate-500 font-sans">
-                    Version 10.0.4 &middot; Source Code: <a href="https://github.com/PxG-Studio/hawaii-doh-ecids-demonstration" target="_blank" title="View official GitHub Source Repository" class="text-indigo-400 hover:underline">hawaii-doh-ecids-demonstration</a>
-                </p>
-                <p class="text-[11px] text-slate-500 font-sans italic">
-                    Made with Aloha 🍍
-                </p>
-                <p class="text-[9px] text-slate-600 font-mono">
+            <footer class="max-w-5xl mx-auto px-4 pb-12 mt-12 text-center space-y-6 border-t border-slate-800/40 pt-8">
+                <!-- Presenter Profile -->
+                <div class="space-y-1">
+                    <p class="text-xs text-slate-300 font-sans tracking-wide">
+                        <span class="font-outfit font-bold text-slate-100 text-sm">Presented by: Joanne Jeremie</span> &middot; Master Educator &amp; Technical Writer
+                    </p>
+                    <p class="text-[11px] text-slate-500 font-mono">
+                        Email: <a href="mailto:joannejeremie1@gmail.com" class="hover:underline text-indigo-400">joannejeremie1@gmail.com</a> | Phone: (808) 321-5801
+                    </p>
+                </div>
+
+                <!-- Collaborative Governance & Certification -->
+                <div class="space-y-1">
+                    <p class="text-xs text-slate-400 font-sans tracking-wide">
+                        In Collaboration &amp; Powered by <a href="https://www.studiopxg.com" target="_blank" title="Visit Studio PxG, LLC" class="font-outfit font-semibold text-slate-300 hover:underline hover:text-slate-200">Studio PxG, LLC</a> &middot; Veteran-Owned
+                    </p>
+                    <p class="text-[10px] font-bold text-indigo-400/90 uppercase tracking-widest font-outfit">
+                        SDVOSB Certified in the State of Hawaii (2026)
+                    </p>
+                </div>
+
+                <!-- Cultural Signature & Source Meta -->
+                <div class="space-y-1.5 pt-2">
+                    <p class="text-xs text-slate-400 font-sans italic flex items-center justify-center gap-1">
+                        Made with Aloha <span class="text-base not-italic" title="Aloha Pineapples">🍍</span>
+                    </p>
+                    <p class="text-[10px] text-slate-500 font-sans">
+                        Version 10.0.4 &middot; Source Code: <a href="https://github.com/PxG-Studio/hawaii-doh-ecids-demonstration" target="_blank" title="View official GitHub Source Repository" class="text-indigo-400/80 hover:underline">hawaii-doh-ecids-demonstration</a>
+                    </p>
+                </div>
+
+                <!-- Compliance / Audit Trail -->
+                <p class="text-[9px] text-slate-600 font-mono pt-2">
                     NIST SP 800-53 rev5 Audit Logged &middot; System Security Level: Moderate (FIPS-199)
                 </p>
             </footer>
