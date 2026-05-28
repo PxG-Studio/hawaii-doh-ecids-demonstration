@@ -1,0 +1,5 @@
+State,SchoolYear,ReportingDate,Region,CaseloadCount,AgeGroup,SettingType,DataGroup
+HI,2024-2025,2024-11-01,Oahu (Honolulu),85,Infants and Toddlers (Birth-2),Home,DG 622
+HI,2024-2025,2024-11-01,Maui (Kahului),32,Infants and Toddlers (Birth-2),Home,DG 622
+HI,2024-2025,2024-11-01,Hawaii (Hilo),29,Infants and Toddlers (Birth-2),Community-based,DG 622
+HI,2024-2025,2024-11-01,Kauai (Lihue),14,Infants and Toddlers (Birth-2),Other,DG 622
