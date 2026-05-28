@@ -221,7 +221,7 @@
                             <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                                 <div>
                                     <h3 class="text-xs font-bold uppercase tracking-wider text-indigo-300 font-outfit">Statewide Scenario Simulator</h3>
-                                    <p class="text-xs text-slate-400 mt-0.5">Mock API pushes to simulate real-time compliance interventions live</p>
+                                    <p class="text-xs text-slate-400 mt-0.5">Choose a scenario below to see how different real-world situations affect DOH compliance in real time</p>
                                 </div>
                                 <div class="flex flex-col gap-2 w-full md:w-auto">
                                     <div class="flex flex-wrap gap-2 w-full md:w-auto">
