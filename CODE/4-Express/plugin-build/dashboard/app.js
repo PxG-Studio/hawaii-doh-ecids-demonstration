@@ -565,9 +565,12 @@
                     <span class="text-slate-500 font-mono">Email: joannejeremie1@gmail.com | Phone: (808) 321-5801</span>
                 </p>
                 <p class="text-xs text-slate-500 font-sans tracking-wide">
-                    In Collaboration &amp; Powered by <span class="font-outfit font-semibold text-slate-400">Studio PxG, LLC</span> &middot; Veteran-Owned
+                    In Collaboration &amp; Powered by <a href="https://www.studiopxg.com" target="_blank" title="Visit Studio PxG, LLC" class="font-outfit font-semibold text-slate-400 hover:underline hover:text-slate-300">Studio PxG, LLC</a> &middot; Veteran-Owned
                     <br />
                     <span class="text-[11px] font-semibold text-indigo-400 uppercase tracking-wider font-outfit">SDVOSB Certified in the State of Hawaii (2026)</span>
+                </p>
+                <p class="text-[10px] text-slate-500 font-sans">
+                    Version 10.0.4 &middot; Source Code: <a href="https://github.com/PxG-Studio/hawaii-doh-ecids-demonstration" target="_blank" title="View official GitHub Source Repository" class="text-indigo-400 hover:underline">hawaii-doh-ecids-demonstration</a>
                 </p>
                 <p class="text-[11px] text-slate-500 font-sans italic">
                     Made with Aloha 🍍
