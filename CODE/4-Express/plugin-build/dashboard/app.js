@@ -448,7 +448,7 @@
                                                 <span class="text-[9px] text-slate-400 font-mono">U.S. Dept of Ed (FS121)</span>
                                             </h4>
                                             <p class="text-[10px] text-slate-400 mt-0.5 leading-relaxed">
-                                                *File Name:* `FS121_Part_C_Child_Count_v2024.csv` | *Data Dictionary:* EDFacts FS121 Data Dictionary (v20.0) | *Published:* Nov 2024. Governs regional child counts and early intervention settings.
+                                                *File Name:* <code class="font-mono bg-slate-900/60 px-1 py-0.5 rounded text-slate-300 text-[9px]">FS121_Part_C_Child_Count_v2024.csv</code> | *Data Dictionary:* EDFacts FS121 Data Dictionary (v20.0) | *Published:* Nov 2024. Governs regional child counts and early intervention settings.
                                             </p>
                                         </div>
                                         <hr class="border-slate-800" />
@@ -458,7 +458,7 @@
                                                 <span class="text-[9px] text-slate-400 font-mono">U.S. Dept of Ed (FS122)</span>
                                             </h4>
                                             <p class="text-[10px] text-slate-400 mt-0.5 leading-relaxed">
-                                                *File Name:* `FS122_Part_C_Exiting_v2024.csv` | *Data Dictionary:* EDFacts FS122 Data Dictionary (v20.0) | *Published:* Nov 2024. Tracks transition outcomes (Part B transition, exit without referral).
+                                                *File Name:* <code class="font-mono bg-slate-900/60 px-1 py-0.5 rounded text-slate-300 text-[9px]">FS122_Part_C_Exiting_v2024.csv</code> | *Data Dictionary:* EDFacts FS122 Data Dictionary (v20.0) | *Published:* Nov 2024. Tracks transition outcomes (Part B transition, exit without referral).
                                             </p>
                                         </div>
                                         <hr class="border-slate-800" />
@@ -468,7 +468,7 @@
                                                 <span class="text-[9px] text-slate-400 font-mono">U.S. Dept of Ed (FS089)</span>
                                             </h4>
                                             <p class="text-[10px] text-slate-400 mt-0.5 leading-relaxed">
-                                                *File Name:* `FS089_Early_Childhood_v2024.csv` | *Data Dictionary:* EDFacts FS089 Data Dictionary (v20.1) | *Published:* Dec 2024. Tracks preschool-aged children settings (regular EC program, home).
+                                                *File Name:* <code class="font-mono bg-slate-900/60 px-1 py-0.5 rounded text-slate-300 text-[9px]">FS089_Early_Childhood_v2024.csv</code> | *Data Dictionary:* EDFacts FS089 Data Dictionary (v20.1) | *Published:* Dec 2024. Tracks preschool-aged children settings (regular EC program, home).
                                             </p>
                                         </div>
                                     </div>
