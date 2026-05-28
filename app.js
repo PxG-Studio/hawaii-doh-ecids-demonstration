@@ -532,6 +532,40 @@
 
                 </div>
             </div>
+
+            <!-- Certified Datasets Downloads -->
+            <section class="max-w-5xl mx-auto px-4 mt-8 mb-6">
+                <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+                    <div class="absolute -left-12 -bottom-12 w-24 h-24 bg-indigo-500/10 rounded-full blur-xl"></div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                        <div>
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-indigo-300 font-outfit">Certified Compliance Datasets</h3>
+                            <p class="text-xs text-slate-400 mt-0.5 font-sans">Download official longitudinal early intervention open data mapping sets in CSV format</p>
+                        </div>
+                        <div class="flex flex-wrap gap-3 w-full md:w-auto font-outfit">
+                            <a href="data/FS121_Part_C_Child_Count_v2024.csv" download="FS121_Part_C_Child_Count_v2024.csv" title="Download certified FS121 Child Count CSV dataset" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                                [CSV] Download FS121 (Child Count)
+                            </a>
+                            <a href="data/FS122_Part_C_Exiting_v2024.csv" download="FS122_Part_C_Exiting_v2024.csv" title="Download certified FS122 Exiting & Transition Outcomes CSV dataset" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                                [CSV] Download FS122 (Exiting)
+                            </a>
+                            <a href="data/FS089_Early_Childhood_v2024.csv" download="FS089_Early_Childhood_v2024.csv" title="Download certified FS089 Early Childhood Settings CSV dataset" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                                [CSV] Download FS089 (Early Childhood)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional State-Level Governance Footer -->
+            <footer class="max-w-5xl mx-auto px-4 pb-12 text-center space-y-2">
+                <p class="text-xs text-slate-500 font-sans tracking-wide">
+                    Powered by <span class="font-outfit font-semibold text-slate-400">Studio PxG, LLC</span> &middot; Made with Aloha for the Hawaii Department of Health
+                </p>
+                <p class="text-[10px] text-slate-600 font-mono">
+                    NIST SP 800-53 rev5 Audit Logged &middot; System Security Level: Moderate (FIPS-199)
+                </p>
+            </footer>
         `;
 
         // Bind events
