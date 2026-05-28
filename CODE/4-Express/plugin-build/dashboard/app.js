@@ -534,22 +534,36 @@
             </div>
 
             <!-- Certified Datasets Downloads -->
-            <section class="max-w-5xl mx-auto px-4 mt-8 mb-6">
+            <section class="max-w-5xl mx-auto px-4 mt-8 mb-6" title="Certified longitudinal Part C and Part B datasets with complete statutory data dictionaries. Hover over buttons to view specific OSEP APA citations.">
                 <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
                     <div class="absolute -left-12 -bottom-12 w-24 h-24 bg-indigo-500/10 rounded-full blur-xl"></div>
-                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                        <div>
-                            <h3 class="text-xs font-bold uppercase tracking-wider text-indigo-300 font-outfit">Certified Compliance Datasets</h3>
-                            <p class="text-xs text-slate-400 mt-0.5 font-sans">Download official longitudinal early intervention open data mapping sets in CSV format</p>
+                    <div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-4">
+                        <div class="space-y-2">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-indigo-300 font-outfit" title="Hawaii P-20 DXP & OSEP aligned compliance schema baselines">Certified Compliance Datasets (EDFacts Section 618)</h3>
+                            <p class="text-xs text-slate-400 mt-0.5 font-sans" title="Official statutory child count, exiting, and preschool environment reports">
+                                Download official longitudinal early intervention open datasets (CSV format) aligned with federal reporting guidelines.
+                            </p>
+                            <!-- Visual APA Citations Index inside the panel -->
+                            <div class="text-[9px] text-slate-500 font-sans leading-relaxed pt-1 space-y-0.5" title="Academic APA reference citations for federal EDFacts specifications">
+                                <div><strong class="text-slate-400">FS121 Citation:</strong> U.S. Dept of Education, OSEP. (2024). *EDFacts File Spec 121: Part C Child Count (v20.0)*.</div>
+                                <div><strong class="text-slate-400">FS122 Citation:</strong> U.S. Dept of Education, OSEP. (2024). *EDFacts File Spec 122: Part C Exiting (v20.0)*.</div>
+                                <div><strong class="text-slate-400">FS089 Citation:</strong> U.S. Dept of Education, OSEP. (2024). *EDFacts File Spec 089: Early Childhood (v20.1)*.</div>
+                            </div>
                         </div>
-                        <div class="flex flex-wrap gap-3 w-full md:w-auto font-outfit">
-                            <a href="data/FS121_Part_C_Child_Count_v2024.csv" download="FS121_Part_C_Child_Count_v2024.csv" title="Download certified FS121 Child Count CSV dataset" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                        <div class="flex flex-wrap gap-2.5 w-full xl:w-auto font-outfit">
+                            <a href="data/FS121_Part_C_Child_Count_v2024.csv" download="FS121_Part_C_Child_Count_v2024.csv" 
+                               title="Download FS121 Child Count CSV. Citation: U.S. Department of Education, Office of Special Education Programs. (2024). EDFacts File Specification 121: Part C Child Count and Settings (v20.0). Washington, D.C.: Author." 
+                               class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
                                 [CSV] Download FS121 (Child Count)
                             </a>
-                            <a href="data/FS122_Part_C_Exiting_v2024.csv" download="FS122_Part_C_Exiting_v2024.csv" title="Download certified FS122 Exiting & Transition Outcomes CSV dataset" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                            <a href="data/FS122_Part_C_Exiting_v2024.csv" download="FS122_Part_C_Exiting_v2024.csv" 
+                               title="Download FS122 Exiting CSV. Citation: U.S. Department of Education, Office of Special Education Programs. (2024). EDFacts File Specification 122: Part C Exiting (v20.0). Washington, D.C.: Author." 
+                               class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
                                 [CSV] Download FS122 (Exiting)
                             </a>
-                            <a href="data/FS089_Early_Childhood_v2024.csv" download="FS089_Early_Childhood_v2024.csv" title="Download certified FS089 Early Childhood Settings CSV dataset" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
+                            <a href="data/FS089_Early_Childhood_v2024.csv" download="FS089_Early_Childhood_v2024.csv" 
+                               title="Download FS089 Early Childhood CSV. Citation: U.S. Department of Education, Office of Special Education Programs. (2024). EDFacts File Specification 089: Children with Disabilities (Early Childhood) (v20.1). Washington, D.C.: Author." 
+                               class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 transition-all">
                                 [CSV] Download FS089 (Early Childhood)
                             </a>
                         </div>
