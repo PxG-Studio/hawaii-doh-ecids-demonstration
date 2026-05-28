@@ -4,6 +4,15 @@ This repository contains the prototype and production-ready source code for the 
 
 ---
 
+## 🔗 Live Presentation Links
+
+For active evaluations and presentations, the following staging environments are live:
+* 🌎 **Primary Demo (Cloudflare Pages Edge CDN):** **[hawaii-doh-ecids-demonstration.pages.dev](https://hawaii-doh-ecids-demonstration.pages.dev/)** *(Loads in under 50ms with zero cold start lag)*
+* 🖥️ **Moodle Server Integration:** **[Staging Moodle Portal](https://vault.pxg.studio/moodle/local/onsitemonitoring/dashboard/?token=d3m0_tok3n_2026_onsitemonitoring_d3m0&tenant=DEMO001)** *(Demonstrates server-side PHP calculation and database integration)*
+* 🌐 **Alternative CDN Mirror (GitHub Pages):** **[pxg-studio.github.io/hawaii-doh-ecids-demonstration](https://pxg-studio.github.io/hawaii-doh-ecids-demonstration/)**
+
+---
+
 ## 1. System Architecture
 
 The application is structured as a bespoke Moodle local plugin that integrates a secure backend API with a glassmorphic front-end dashboard. The diagram below illustrates the end-to-end data flow, from the database tier through the anonymization filters to the interactive browser interface.
@@ -85,13 +94,14 @@ gitGraph
 ## 3. Core Dashboard Features
 
 1. **3D Card Flip Mechanics:** Employs CSS 3D perspective transforms to toggle between the **Interactive Monitoring Dashboard** (front face) and the **APA-Cited Regulatory Data Sheet** (back face), minimizing cognitive clutter for users.
-2. **Statewide Scenario Simulator:** Seeded with four real-world states:
+2. **Statewide Scenario Simulator:** Translated into plain English for non-technical stakeholders (`Choose a scenario below to see how different real-world situations affect DOH compliance in real time`). Features four pre-seeded real-world simulation states:
    * `baseline`: Standard Hawaii operational rates.
    * `shortage`: Simulated staffing emergency on Maui, illustrating critical delays.
    * `blitz`: Simulates a training blitz on Oahu, showing accelerated compliance rates.
-   * `consent_delay`: Simulates systemic administrative delays on Kauai.
+   * `consent_delay`: Simulates systemic parental consent delays on Kauai.
 3. **FERPA-Compliant Audit Ledger:** Instantly masks student Personally Identifiable Information (PII) using a mock cryptographic SHA-256 hash algorithm to satisfy 34 C.F.R. § 99 regulations. Features an authorized toggle to review decrypted labels for authorized administrators under NIST SP 800-53 standards.
-4. **EDFacts Data Mapping:** Houses complete longitudinal CSV database files and schema representations for **FS121 (DG 622)**, **FS122 (DG 623)**, and **FS089 (DG 619)**.
+4. **EDFacts Data Mapping & Certified Downloads:** Houses complete longitudinal CSV database files and schema representations for **FS121 (DG 622)**, **FS122 (DG 623)**, and **FS089 (DG 619)**. Fully integrated with secure, clickable download triggers in FIPS-199 compliance tables.
+5. **Polished Presenter Footer:** Visually emphasizes presenter credentials (`Presented by: Joanne Jeremie · Master Educator & Technical Writer`), collaboration indicators (`In Collaboration & Powered by Studio PxG, LLC · Veteran-Owned`), and certified Hawaiian **SDVOSB status (2026)**.
 
 ---
 
